@@ -9,14 +9,3 @@ services:
     ports:
       - 3000:3000
     tty: true
-
-  mysql:
-    container_name: mysql
-    image: mariadb:10.5.4
-    volumes:
-      - mysql_data:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: example
-
-volumes:
-  mysql_data:
